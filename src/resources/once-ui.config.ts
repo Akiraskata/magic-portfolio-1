@@ -188,16 +188,17 @@ const mailchimp: MailchimpConfig = {
 const schema: SchemaConfig = {
   logo: "",
   type: "Organization",
-  name: "Once UI",
-  description: home.description,
-  email: "lorant@once-ui.com",
+  name: "Akira",
+  description: "Akira | Personal Website",
+  email: "info@akirakata.com",
 };
 
 // social links
 const sameAs: SameAsConfig = {
-  threads: "https://www.threads.com/@once_ui",
-  linkedin: "https://www.linkedin.com/company/once-ui/",
-  discord: "https://discord.com/invite/5EyAQ4eNdS",
+  threads: "https://www.threads.com/@akiraskata",
+  linkedin: "https://www.linkedin.com/company/akiraskata/",
+  facebook: "https://www.facebook.com/akiraskata",
+
 };
 
 // social sharing configuration for blog posts
@@ -206,7 +207,7 @@ const socialSharing: SocialSharingConfig = {
   platforms: {
     x: true,
     linkedin: true,
-    facebook: false,
+    facebook: true,
     pinterest: false,
     whatsapp: false,
     reddit: false,

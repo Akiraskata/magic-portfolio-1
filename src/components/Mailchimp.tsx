@@ -135,7 +135,7 @@ export const Mailchimp: React.FC<React.ComponentProps<typeof Column>> = ({ ...fl
             id="mce-EMAIL"
             name="EMAIL"
             type="email"
-            placeholder="Email"
+            placeholder="メールアドレス"
             required
             onChange={(e) => {
               if (error) {
@@ -172,8 +172,8 @@ export const Mailchimp: React.FC<React.ComponentProps<typeof Column>> = ({ ...fl
           </div>
           <div className="clear">
             <Row height="48" vertical="center">
-              <Button id="mc-embedded-subscribe" value="Subscribe" size="m" fillWidth>
-                Subscribe
+              <Button id="mc-embedded-subscribe" value="Subscribe" size="l" fillWidth>
+                購読する
               </Button>
             </Row>
           </div>

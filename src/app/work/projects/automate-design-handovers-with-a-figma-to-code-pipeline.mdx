@@ -1,44 +1,75 @@
 ---
-title: "Automating Design Handovers with a Figma to Code Pipeline"
-publishedAt: "2024-04-01"
-summary: "Explore the enduring debate between using spaces and tabs for code indentation, and why this choice matters more than you might think."
+title: "パーソナルポートフォリオ構築と運用の自動化"
+publishedAt: "2025-01-08"
+summary: "Next.js と MDX を用いて、学習記録と制作物を一元管理するパーソナルポートフォリオを構築。"
 images:
   - "/images/projects/project-01/cover-02.jpg"
-  - "/images/projects/project-01/image-03.jpg"
+
 team:
-  - name: "John Doe"
-    role: "Software Engineer"
-    avatar: "/images/avatar.jpg"
-    linkedIn: "https://www.linkedin.com/company/once-ui/"
-link: "https://once-ui.com/"
+  - name: "かた あきら"
+role: "IT専攻学生 / フルスタック開発学習者"
+avatar: "/images/projects/project-01/avatar-01.jpg"
 ---
 
 ## Overview
 
-In this project, I focused on automating the often tedious design handover process. The goal was to create a pipeline that converts Figma designs directly into clean, production-ready code. By integrating design tokens, component libraries, and automated workflows, this solution significantly reduced the time spent on translating design assets into code, while maintaining design consistency across the product.
+本プロジェクトは、自身の学習成果や制作物を整理・発信することを目的として構築した、
+パーソナルポートフォリオサイトです。
 
-## Key Features
-
-- **Figma Plugin Integration**: Developed a custom Figma plugin that extracts design tokens such as colors, typography, and spacing values, and exports them in a format compatible with our codebase.
-- **Code Generation**: Integrated an automated process that translates Figma components into React code using a combination of design tokens and pre-built component templates. This allowed developers to focus more on logic and less on repetitive UI coding.
-- **Continuous Sync**: Established a CI/CD pipeline that continuously synchronizes design changes from Figma to the codebase, ensuring design updates are reflected instantly without manual intervention.
-- **Scalable Design System**: Leveraged a design system that remains the single source of truth for both designers and developers, making it easy to maintain consistency even as the product evolves.
-
-## Technologies Used
-
-- **Figma API**: For extracting design tokens and component data directly from the Figma designs.
-- **React and Next.js**: For building the front-end codebase with clean, reusable components.
-- **Styled-Components**: For managing styles dynamically using design tokens.
-- **GitHub Actions**: For automating the pipeline and syncing design changes to the repository.
-
-## Challenges and Learnings
-
-One of the biggest challenges was ensuring that the generated code was clean and maintainable. This involved setting up intelligent mapping between Figma components and React code structures, as well as managing edge cases like responsive design and conditional rendering. Additionally, the continuous synchronization required a robust error-handling system to prevent conflicts during development.
-
-## Outcome
-
-The automated Figma to code pipeline has streamlined the handoff process, cutting down design-to-development time by 40%. Designers now have more confidence that their designs will be accurately translated into code, and developers can focus on more complex logic and feature development. This project has proven the value of automation in bridging the gap between design and development.
+ブログ機能を通じて、プログラミングや Web 技術の学習内容を記録しながら、
+プロジェクトページでは制作物や取り組みの過程を分かりやすくまとめています。
+継続的な改善と機能追加を前提とした、長期運用可能な構成を意識しています。
 
 ---
 
-This project demonstrates your ability to leverage automation and streamline workflows, which is highly relevant for design engineering portfolios focused on efficiency and innovation.
+## Key Features
+
+- **MDX ベースのブログ・コンテンツ管理**
+`.mdx` ファイルを用いて、記事やプロジェクト内容を簡単に追加・編集できる構成を採用しています。
+
+- **ポートフォリオとブログの統合**
+学習記録と制作物を一つのサイト内で管理し、成長の過程が分かる構成にしています。
+
+- **シンプルで拡張性の高い設計**
+将来的な機能追加（ユーザー管理や EC 機能など）を想定し、構造を整理しています。
+
+- **画像・ビジュアルコンテンツ対応**
+写真やスクリーンショットを活用し、視覚的にも理解しやすいページ構成を実装しています。
+
+---
+
+## Technologies Used
+
+- **Next.js**
+モダンなフロントエンド開発とページ構成のために使用。
+
+- **TypeScript**
+型安全性を確保し、保守性の高いコードを書くために採用。
+
+- **MDX**
+Markdown と React を組み合わせ、柔軟なコンテンツ管理を実現。
+
+- **Java / Spring Boot（学習中・予定）**
+将来的なバックエンド API 構築を想定し、現在学習を進めています。
+
+---
+
+## Challenges and Learnings
+
+ファイルベースルーティングや MDX を用いたコンテンツ管理の仕組みを理解することが、
+最初の課題でした。
+
+試行錯誤を重ねる中で、ディレクトリ構成やプロジェクト設計が、
+開発効率や保守性に大きく影響することを実感しました。
+また、実装だけでなく「どのように整理して見せるか」を意識するようになりました。
+
+---
+
+## Outcome
+
+本プロジェクトを通して、Web アプリケーションを一から構築し、
+継続的に改善していく流れを実践的に学ぶことができました。
+
+今後はバックエンド機能や EC 機能の追加にも取り組み、
+フロントエンドとバックエンドを連携させた
+フルスタック開発スキルの向上を目指しています。

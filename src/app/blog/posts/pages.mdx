@@ -1,56 +1,29 @@
 ---
-title: "Enable or disable pages for your portfolio"
-summary: "Magic Portfolio's RouteGuard component takes care of conditionally rendering pages based on your settings."
-image: "/images/gallery/horizontal-2.jpg"
-publishedAt: "2025-04-22"
-tag: "Magic Portfolio"
+title: "🚶‍♂️ 旅の途中で見つけた景色"
+publishedAt: "2026-01-10"
+description: "目的地へ向かう道中、ふと足を止めてシャッターを切った瞬間。"
+image: "/images/blog/DSC_1914.jpg"
+tag: "旅行"
 ---
 
-## Enable or disable pages
+## 偶然の出会いを記録する
 
-Magic Portfolio's `RouteGuard` component takes care of conditionally rendering pages based on the `routes` object in the `resources/config.js` file.
+旅行の醍醐味は、計画された観光地だけでなく、道中で出会う何気ない景色にあります。
 
-<CodeBlock
-    marginBottom="16"
-    highlight="6"
-    codes={[
-  {
-    code:
-`const routes = {
-    '/':        true,
-    '/about':   true,
-    '/work':    true,
-    '/blog':    true,
-    '/gallery': false,
-};`,
-    language: "tsx",
-    label: "src/app/resources/config.js"
-  }
-]} />
+### 空に続く彩り
 
-The code above will ensure that the `/gallery` page is not accessible and is not displayed in the navigation.
+![灯籠](/images/blog/DSC_1914.jpg)
 
-## Add new pages
+見上げれば、吸い込まれそうな青空に色とりどりの提灯が揺れていました。その鮮やかなコントラストは、旅の気分をより一層高めてくれます。
 
-When creating a new page, it needs to be added to the `routes` object in the `resources/config.js` file.
+### 生命の息吹
 
-<CodeBlock
-    marginBottom="16"
-    highlight="6"
-    codes={[
-  {
-    code:
-`const routes = {
-    '/':        true,
-    '/about':   true,
-    '/work':    true,
-    '/blog':    true,
-    '/gallery': false,
-    '/music': true,
-};`,
-    language: "tsx",
-    label: "src/app/resources/config.js"
-  }
-]} />
+ふらりと立ち寄った場所で、静かに時を過ごす動物たちや、長い時間をかけて実を結んだ木々に出会いました。
 
-The code above will ensure that the `/music` page is accessible. Users will be able to navigate to it after adding it to the navigation menu in the `components/Header.tsx` file.
+これらはすべて、その時、その場所でしか味わえない一期一会の景色です。
+
+## 結び：歩みを止めて見えるもの
+
+急いで目的地に向かうだけではなく、時には立ち止まり、周囲を観察すること。それこそが旅を豊かにしてくれる秘訣だと気づかされた時間でした。
+
+

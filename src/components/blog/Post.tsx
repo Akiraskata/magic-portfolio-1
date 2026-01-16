@@ -17,12 +17,12 @@ export default function Post({ post, thumbnail, direction }: PostProps) {
       key={post.slug}
       href={`/blog/${post.slug}`}
       transition="micro-medium"
-      direction={direction}
+      direction="column"
       border="transparent"
       background="transparent"
-      padding="4"
+      padding="0"
       radius="l-4"
-      gap={direction === "column" ? undefined : "24"}
+      gap={direction === "column" ? undefined : "8"}
       s={{ direction: "column" }}
     >
       {post.metadata.image && thumbnail && (

@@ -2,48 +2,48 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
+  firstName: "Akira",
+  lastName: "Kata",
+  name: `AKIRA KATA`,
   role: "Design Engineer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "info@akirakata.com",
+  location: "Asia/Tokyo", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Japanese","Chinese"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  title: <>{person.firstName}のニュースレターを購読する</>,
+  description: <>創造性とエンジニアリングについて、毎週発信しています。</>,
 };
 
 const social: Social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
   // Set essentials: true for links you want to show on the about page
-  {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system",
-    essential: true,
-  },
+  // {
+  //   name: "GitHub",
+  //   icon: "github",
+  //   link: "https://github.com/once-ui-system",
+  //   essential: true,
+  // },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/company/akiraskata/",
     essential: true,
   },
   {
     name: "Instagram",
     icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
+    link: "https://www.instagram.com/akiraskata/",
     essential: false,
   },
   {
     name: "Threads",
     icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.threads.com/@akiraskata",
     essential: true,
   },
   {
@@ -57,18 +57,18 @@ const social: Social = [
 const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
-  label: "Home",
+  label: "ホーム",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>学びながら、つくる</>,
   featured: {
-    display: true,
+    display: false,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">個人プロジェクト</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          Featured work
+          主な制作実績
         </Text>
       </Row>
     ),
@@ -76,19 +76,19 @@ const home: Home = {
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
+      東京を拠点に、 <Text as="span" size="xl" weight="strong">Web技術を学びながら開発しています</Text>, <br /> 小さなプロジェクトを通して、経験を積んでいます。
 </>
   ),
 };
 
 const about: About = {
   path: "/about",
-  label: "About",
-  title: `About – ${person.name}`,
+  label: "自己紹介",
+  title: `Welcome to ${person.name}`,
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
-    subItems: false,
+    subItems: true,
   },
   avatar: {
     display: true,
@@ -101,54 +101,46 @@ const about: About = {
     display: true,
     title: "Introduction",
     description: (
-      <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
-      </>
-    ),
+        <>
+          <em>学びながら、つくる。</em>
+          <em>— This is a new chapter.</em>
+          <br />
+          こんにちは、方晶です。東京を拠点に活動するデザインエンジニアで、現在はフルスタック開発を中心にWeb技術を学んでいます。
+          <br /><br />
+          小さなプロジェクトを通して実践的なスキルを身につけながら、設計と実装の両面から価値のあるものづくりを目指しています。
+          <br /><br />
+          日常では読書や写真撮影、音楽を楽しみながら、YouTubeを活用して技術やデザインに関する情報収集も行っています。
+        </> ),
   },
   work: {
     display: true, // set to false to hide this section
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "貿易向けソフトウェア会社",
+        timeframe: "2021",
+        role: "ソフトウェア営業",
         achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
+          <>貿易関連ソフトウェアの営業業務を担当し、顧客対応および要件ヒアリングを行いました。</>,
+          <>顧客の業務内容を理解し、システム導入や利用のサポートを行いました。</>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            alt: "アプリ",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "デザインスタジオ / フリーランス",
+        timeframe: "2018",
+        role: "グラフィックデザイナー",
         achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
+          <>ポスターや販促物などの平面デザイン制作を担当しました。</>,
+          <>視覚表現やユーザー目線のデザイン感覚を身につけました。</>,
         ],
         images: [],
       },
@@ -159,12 +151,12 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "国際工科専門学校",
+        description: <>2023年より日本語の学習を開始し、日常会話および専門用語の理解力向上に取り組んでいます。</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "白荻学園",
+        description: <>2025年より在学中。IT情報分野を専攻し、ソフトウェア開発および全栈技術を学んでいます。</>,
       },
     ],
   },
@@ -173,14 +165,14 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
+        title: "バックエンド開発",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>JavaおよびSpring Bootを使用したバックエンド開発を学習し、REST APIの構築に取り組んでいます。</>
         ),
         tags: [
-          {
-            name: "Figma",
-            icon: "figma",
+          { name: "Vue.js" },
+          { name: "React" },
+          { name: "JavaScript"
           },
         ],
         // optional: leave the array empty if you don't want to display images
@@ -200,23 +192,14 @@ const about: About = {
         ],
       },
       {
-        title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
+        title: "データベース / フルスタック",
+        description:  <>データベース設計の基礎を学び、フロントエンドとバックエンドを連携させた全栈開発を学習中です。</>,
+
         tags: [
           {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
+            name: "Database" },
+          { name: "Full Stack" },
+
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
@@ -234,8 +217,8 @@ const about: About = {
 
 const blog: Blog = {
   path: "/blog",
-  label: "Blog",
-  title: "Writing about design and tech...",
+  label: "ブログ",
+  title: "Design & Tech の記録",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
@@ -243,7 +226,7 @@ const blog: Blog = {
 
 const work: Work = {
   path: "/work",
-  label: "Work",
+  label: "制作実績",
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
@@ -252,7 +235,7 @@ const work: Work = {
 
 const gallery: Gallery = {
   path: "/gallery",
-  label: "Gallery",
+  label: "ギャラリー",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
   // Images by https://lorant.one

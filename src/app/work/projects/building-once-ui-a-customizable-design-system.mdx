@@ -1,45 +1,93 @@
 ---
-title: "Building Once UI, a Customizable Design System"
-publishedAt: "2024-04-08"
-summary: "Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration."
+title: "メインプロジェクト：パーソナルポートフォリオ & EC プラットフォーム"
+publishedAt: "2025-01-08"
+summary: "Next.js と Java（Spring Boot）を用いて構築する、学習と実践を統合したフルスタック・メインプロジェクト。"
 images:
   - "/images/projects/project-01/cover-01.jpg"
   - "/images/projects/project-01/cover-02.jpg"
   - "/images/projects/project-01/cover-03.jpg"
-  - "/images/projects/project-01/cover-04.jpg"
 team:
-  - name: "Selene Yu"
-    role: "Software Engineer"
-    avatar: "/images/avatar.jpg"
-    linkedIn: "https://www.linkedin.com/company/once-ui/"
-  - name: "Lorant One"
-    role: "Design Engineer"
-    avatar: "/images/projects/project-01/avatar-01.jpg"
-    linkedIn: "https://www.linkedin.com/company/once-ui/"
+  - name: "かた あきら"
+role: "IT専攻学生 / フルスタック開発学習者"
+avatar: "/images/projects/project-01/avatar-01.jpg"
 ---
 
 ## Overview
 
-Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration.
+本プロジェクトは、私自身の学習と実践を長期的に統合していく
+**メインプロジェクト**として設計したパーソナル Web プラットフォームです。
+
+ポートフォリオおよびブログ機能を基盤とし、
+将来的には **EC（オンラインショップ）機能の実装**を行うことで、
+フロントエンドからバックエンドまでを一貫して開発する
+フルスタック構成を目指しています。
+
+---
 
 ## Key Features
 
-- **Component Library**: Built a set of modular, reusable UI components using React and styled-components in Next.js, focusing on accessibility and responsiveness.
-- **Theming and Customization**: Integrated a theming system that allows easy switching and customization of color palettes, typography, and layout styles using CSS variables and Figma tokens.
-- **Figma Integration**: Collaborated closely with designers by setting up a shared design library in Figma. This library was synchronized with the codebase, ensuring design handoffs were seamless and that design tokens remained consistent across both platforms.
-- **Documentation and Usage Guidelines**: Developed comprehensive documentation with Storybook to showcase components, usage patterns, and best practices, ensuring the design system is easy to adopt by other teams.
+- **MDX ベースのコンテンツ管理**
+`.mdx` ファイルによるブログ・記事管理を採用し、
+データベースに依存しないシンプルな運用を実現しています。
+
+- **ポートフォリオ / プロジェクト管理機能**
+制作物や学習成果を整理し、分かりやすく発信できる構成にしています。
+
+- **拡張性を重視した設計**
+将来的な EC 機能追加を前提とし、
+コンポーネント設計やディレクトリ構成を整理しています。
+
+- **写真・ビジュアルコンテンツ対応**
+写真やビジュアル要素を活かした表現が可能なレイアウトを実装しています。
+
+---
 
 ## Technologies Used
 
-- **Next.js**: For fast, server-rendered React applications.
-- **Figma**: For creating and managing design assets and prototypes.
-- **Styled-Components**: For styling React components with a modular, themable approach.
-- **Storybook**: For building an interactive, documented component library.
+- **Next.js**
+モダンなフロントエンド開発のための React フレームワーク。
+
+- **TypeScript**
+型安全性を確保し、保守性の高いコードを書くために使用。
+
+- **MDX**
+Markdown と React を組み合わせた柔軟なコンテンツ管理。
+
+- **Java / Spring Boot（予定）**
+バックエンド API およびビジネスロジック実装のために導入予定。
+
+- **RDB（予定）**
+商品・ユーザー・注文情報を管理するためのデータベース設計を想定。
+
+---
 
 ## Challenges and Learnings
 
-One key challenge was balancing the need for flexibility with the desire to maintain design consistency. The solution involved creating well-defined design tokens and establishing clear guidelines for when and how components could be customized. Additionally, setting up effective collaboration workflows between designers and developers using Figma and Git was a learning experience that greatly improved the process.
+Next.js における App Router やファイルベースルーティング、
+MDX を用いたコンテンツ管理の理解が、最初の大きな課題でした。
+
+試行錯誤を通じて、
+プロジェクト構成やディレクトリ設計が開発効率や拡張性に
+大きく影響することを学びました。
+また、機能性とデザインのバランスについても意識するようになりました。
+
+---
+
+## Roadmap（今後の開発予定）
+
+- **Phase 1**：ブログ・ポートフォリオ機能の安定化
+- **Phase 2**：商品一覧・商品詳細ページの実装
+- **Phase 3**：Spring Boot によるバックエンド API 構築
+- **Phase 4**：ユーザー管理・注文管理機能の追加
+- **Phase 5**：決済処理を含む EC 機能の完成（学習目的）
+
+---
 
 ## Outcome
 
-The design system is now actively used across multiple projects, leading to faster development cycles, fewer design inconsistencies, and improved collaboration between design and development teams. It has become a foundation for scaling our products efficiently while ensuring a cohesive user experience.
+本プロジェクトは、継続的な改善と機能追加を前提とした
+実践的なフルスタック開発の学習基盤となっています。
+
+技術力の向上だけでなく、
+設計・実装・運用までを一貫して考える力を養い、
+将来的な就職活動や実務に活かすことを目的としています。
