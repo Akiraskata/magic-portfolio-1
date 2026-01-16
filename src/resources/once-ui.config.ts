@@ -14,7 +14,7 @@ import {
 import { home } from "./index";
 
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL: string = "https://demo.magic-portfolio.com";
+const baseURL: string = "https://www.akirakata.com";
 
 const routes: RoutesConfig = {
   "/": true,
@@ -186,7 +186,7 @@ const mailchimp: MailchimpConfig = {
 
 // default schema data
 const schema: SchemaConfig = {
-  logo: "",
+  logo: "AK",
   type: "Organization",
   name: "Akira",
   description: "Akira | Personal Website",

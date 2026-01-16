@@ -2,7 +2,7 @@
 
 Magic Portfolio is a simple, clean, beginner-friendly portfolio template. It supports an MDX-based content system for projects and blog posts, an about / CV page and a gallery.
 
-View the demo [here](https://demo.magic-portfolio.com).
+View the demo
 
 ![Magic Portfolio](public/images/og/home.jpg)
 
@@ -47,7 +47,7 @@ Docs available at: [docs.once-ui.com](https://docs.once-ui.com/docs/magic-portfo
 ## Features
 
 ### Once UI
-- All tokens, components & features of [Once UI](https://once-ui.com)
+- All tokens, components & features of Once UI
 
 ### SEO
 - Automatic open-graph and X image generation with next/og
@@ -56,7 +56,7 @@ Docs available at: [docs.once-ui.com](https://docs.once-ui.com/docs/magic-portfo
 ### Design
 - Responsive layout optimized for all screen sizes
 - Timeless design without heavy animations and motion
-- Endless customization options through [data attributes](https://once-ui.com/docs/theming)
+- Endless customization options through data attributes
 
 ### Content
 - Render sections conditionally based on the content file
@@ -70,12 +70,12 @@ Docs available at: [docs.once-ui.com](https://docs.once-ui.com/docs/magic-portfo
 
 ## Creators
 
-Lorant One: [Threads](https://www.threads.net/@lorant.one) / [LinkedIn](https://www.linkedin.com/in/lorant-one/)
+Lorant One: [Threads](https://www.threads.net/@akiraskata) / [LinkedIn](https://www.linkedin.com/in/akiraskata/)
 
 ## Get involved
 
-- Join the Design Engineers Club on [Discord](https://discord.com/invite/5EyAQ4eNdS) and share your project with us!
-- Deployed your docs? Share it on the [Once UI Hub](https://once-ui.com/hub) too! We feature our favorite apps on our landing page.
+- Join the Design Engineers Club on Discord and share your project with us!
+- Deployed your docs? Share it on the Once UI Hub too! We feature our favorite apps on our landing page.
 
 ## License
 
@@ -86,6 +86,4 @@ Distributed under the CC BY-NC 4.0 License.
 
 See `LICENSE.txt` for more information.
 
-## Deploy with Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&project-name=portfolio&repository-name=portfolio&redirect-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&demo-title=Magic%20Portfolio&demo-description=Showcase%20your%20designers%20or%20developer%20portfolio&demo-url=https%3A%2F%2Fdemo.magic-portfolio.com&demo-image=%2F%2Fraw.githubusercontent.com%2Fonce-ui-system%2Fmagic-portfolio%2Fmain%2Fpublic%2Fimages%2Fog%2Fhome.jpg)
