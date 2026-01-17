@@ -34,6 +34,7 @@ const display: DisplayConfig = {
 // Set password in the .env file, refer to .env.example
 const protectedRoutes: ProtectedRoutesConfig = {
   "/work/automate-design-handovers-with-a-figma-to-code-pipeline": true,
+  "/blog/ueno_zoo_flamingo": true,
 };
 
 // Import and set font for each variant
@@ -196,7 +197,7 @@ const schema: SchemaConfig = {
 // social links
 const sameAs: SameAsConfig = {
   threads: "https://www.threads.com/@akiraskata",
-  linkedin: "https://www.linkedin.com/company/akiraskata/",
+  linkedin: "https://www.linkedin.com/in/akiraskata",
   facebook: "https://www.facebook.com/akiraskata",
 
 };
