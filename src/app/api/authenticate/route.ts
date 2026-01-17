@@ -2,7 +2,9 @@ import { NextRequest, NextResponse } from "next/server";
 import * as cookie from "cookie";
 
 export async function POST(request: NextRequest) {
-  const body = await request.json();
+    console.log("ENV PASSWORD =", process.env.PAGE_ACCESS_PASSWORD);
+
+    const body = await request.json();
   const { password } = body;
   const correctPassword = process.env.PAGE_ACCESS_PASSWORD;
 

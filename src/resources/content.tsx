@@ -15,7 +15,8 @@ const person: Person = {
 const newsletter: Newsletter = {
   display: true,
   title: <>{person.firstName}のニュースレターを購読する</>,
-  description: <>創造性とエンジニアリングについて、毎週発信しています。</>,
+  description: <>個人開発や学習の過程で得た気づき、
+    設計やものづくりについての考えを記録しています。</>,
 };
 
 const social: Social = [
@@ -31,7 +32,7 @@ const social: Social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/akiraskata/",
+    link: "https://www.linkedin.com/in/akiraskata",
     essential: true,
   },
   {
@@ -60,7 +61,7 @@ const home: Home = {
   label: "ホーム",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>学びながら、つくる</>,
+  headline: <>つくりながら、理解する。</>,
   featured: {
     display: false,
     title: (
@@ -76,15 +77,17 @@ const home: Home = {
   },
   subline: (
     <>
-      東京を拠点に、 <Text as="span" size="xl" weight="strong">Web技術を学びながら開発しています</Text>, <br /> 小さなプロジェクトを通して、経験を積んでいます。
-</>
+      東京を拠点に、 <Text as="span" size="xl" weight="strong">Webプロダクトの設計から実装までを意識した開発に取り組んでいます。</Text> <br />  小さな制作を重ねながら、実践的な経験を積んでいます。
+
+
+    </>
   ),
 };
 
 const about: About = {
   path: "/about",
   label: "自己紹介",
-  title: `Welcome to ${person.name}`,
+  title: `Webエンジニアとしての記録と制作物 - ${person.name}`,
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
@@ -102,14 +105,18 @@ const about: About = {
     title: "Introduction",
     description: (
         <>
-          <em>学びながら、つくる。</em>
-          <em>— This is a new chapter.</em>
+
+          <em>つくることで、理解を深める。</em>
+          <em>設計と実装の往復を通して、エンジニアとしての基礎を築いています。</em>
           <br />
-          こんにちは、方晶です。東京を拠点に活動するデザインエンジニアで、現在はフルスタック開発を中心にWeb技術を学んでいます。
+          こんにちは、方晶（Akira Kata）です。
+          東京を拠点に、Webプロダクトの設計から実装までを意識した開発に取り組んでいます。
           <br /><br />
-          小さなプロジェクトを通して実践的なスキルを身につけながら、設計と実装の両面から価値のあるものづくりを目指しています。
+          小さなプロジェクトを自ら設計し、実装・改善を繰り返すことで、
+          フロントエンドとバックエンドのつながりを実践的に理解することを重視しています。
           <br /><br />
-          日常では読書や写真撮影、音楽を楽しみながら、YouTubeを活用して技術やデザインに関する情報収集も行っています。
+          日常では読書や写真、音楽を通して感覚を整える時間を大切にしています。
+          こうした視点は、UIの余白や文章表現など、ものづくりの細部にも影響しています。
         </> ),
   },
   work: {
@@ -121,8 +128,8 @@ const about: About = {
         timeframe: "2021",
         role: "ソフトウェア営業",
         achievements: [
-          <>貿易関連ソフトウェアの営業業務を担当し、顧客対応および要件ヒアリングを行いました。</>,
-          <>顧客の業務内容を理解し、システム導入や利用のサポートを行いました。</>,
+          <>貿易関連ソフトウェアの営業業務を担当し、顧客対応や要件ヒアリングを行いました。</>,
+          <>業務の中で、相手の言葉になっていない課題をくみ取り、整理して伝えることの難しさと重要性を学びました。</>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
@@ -156,7 +163,7 @@ const about: About = {
       },
       {
         name: "白荻学園",
-        description: <>2025年より在学中。IT情報分野を専攻し、ソフトウェア開発および全栈技術を学んでいます。</>,
+        description: <>2025年より在学中。IT情報分野を専攻し、ソフトウェア開発の基礎理解に取り組んでいます。</>,
       },
     ],
   },
@@ -167,7 +174,7 @@ const about: About = {
       {
         title: "バックエンド開発",
         description: (
-          <>JavaおよびSpring Bootを使用したバックエンド開発を学習し、REST APIの構築に取り組んでいます。</>
+          <>バックエンドを軸に、フロントエンドとの連携を意識した開発に取り組んでいます。JavaおよびSpring Bootを使用したバックエンド開発を学習し、REST APIの構築に取り組んでいます。</>
         ),
         tags: [
           { name: "Vue.js" },
@@ -218,7 +225,7 @@ const about: About = {
 const blog: Blog = {
   path: "/blog",
   label: "ブログ",
-  title: "Design & Tech の記録",
+  title: "日常から設計へ",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
