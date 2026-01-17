@@ -98,7 +98,7 @@ const about: About = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://cal.com/akirakata/30min",
   },
   intro: {
     display: true,
