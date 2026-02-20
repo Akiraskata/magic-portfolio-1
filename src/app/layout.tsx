@@ -1,6 +1,7 @@
 import "@once-ui-system/core/css/styles.css";
 import "@once-ui-system/core/css/tokens.css";
 import "@/resources/custom.css";
+import Script from "next/script";
 
 import classNames from "classnames";
 
@@ -45,6 +46,25 @@ export default async function RootLayout({
       )}
     >
       <head>
+
+
+          <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+              strategy="afterInteractive"
+          />
+
+          <Script id="google-analytics" strategy="afterInteractive">
+              {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', {
+      page_path: window.location.pathname,
+    });
+  `}
+          </Script>
+
+
         <script
           id="theme-init"
           dangerouslySetInnerHTML={{
