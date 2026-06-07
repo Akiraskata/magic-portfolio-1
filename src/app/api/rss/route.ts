@@ -1,9 +1,9 @@
-import { getPosts } from "@/utils/utils";
+import { getAllBlogPosts } from "@/utils/blogPosts";
 import { baseURL, blog, person } from "@/resources";
 import { NextResponse } from "next/server";
 
 export async function GET() {
-  const posts = getPosts(["src", "app", "blog", "posts"]);
+  const posts = await getAllBlogPosts();
 
   // Sort posts by date (newest first)
   const sortedPosts = posts.sort((a, b) => {
@@ -35,7 +35,7 @@ export async function GET() {
       <link>${baseURL}/blog/${post.slug}</link>
       <guid>${baseURL}/blog/${post.slug}</guid>
       <pubDate>${new Date(post.metadata.publishedAt).toUTCString()}</pubDate>
-      <description><![CDATA[${post.metadata.summary}]]></description>
+      <description><![CDATA[${post.metadata.summary || ""}]]></description>
       ${post.metadata.image ? `<enclosure url="${baseURL}${post.metadata.image}" type="image/jpeg" />` : ""}
       ${post.metadata.tag ? `<category>${post.metadata.tag}</category>` : ""}
       <author>${person.email || "noreply@example.com"} (${person.name})</author>
