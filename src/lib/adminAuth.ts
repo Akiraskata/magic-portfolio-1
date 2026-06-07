@@ -52,7 +52,8 @@ export async function createSession(userId: string) {
 }
 
 export async function getSessionUser(): Promise<SessionUser | null> {
-  const token = cookies().get(SESSION_COOKIE)?.value;
+  const cookieStore = await cookies();
+  const token = cookieStore.get(SESSION_COOKIE)?.value;
   if (!token) return null;
 
   const session = await prisma.adminSession.findUnique({
@@ -84,10 +85,12 @@ export async function clearSession(token: string | undefined) {
   await prisma.adminSession.deleteMany({ where: { token } });
 }
 
-export function deleteSessionCookie() {
-  cookies().delete(SESSION_COOKIE);
+export async function deleteSessionCookie() {
+  const cookieStore = await cookies();
+  cookieStore.delete(SESSION_COOKIE);
 }
 
-export function getSessionToken() {
-  return cookies().get(SESSION_COOKIE)?.value;
+export async function getSessionToken() {
+  const cookieStore = await cookies();
+  return cookieStore.get(SESSION_COOKIE)?.value;
 }
