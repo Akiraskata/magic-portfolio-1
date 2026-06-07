@@ -16,14 +16,14 @@ import {
 } from "@once-ui-system/core";
 import { baseURL, about, blog, person } from "@/resources";
 import { formatDate } from "@/utils/formatDate";
-import { getPosts } from "@/utils/utils";
+import { getBlogPostBySlug, getMdxBlogPosts } from "@/utils/blogPosts";
 import { Metadata } from "next";
 import React from "react";
 import { Posts } from "@/components/blog/Posts";
 import { ShareSection } from "@/components/blog/ShareSection";
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
-  const posts = getPosts(["src", "app", "blog", "posts"]);
+  const posts = getMdxBlogPosts();
   return posts.map((post) => ({
     slug: post.slug,
   }));
@@ -39,8 +39,7 @@ export async function generateMetadata({
     ? routeParams.slug.join("/")
     : routeParams.slug || "";
 
-  const posts = getPosts(["src", "app", "blog", "posts"]);
-  let post = posts.find((post) => post.slug === slugPath);
+  const post = await getBlogPostBySlug(slugPath);
 
   if (!post) return {};
 
@@ -59,16 +58,11 @@ export default async function Blog({ params }: { params: Promise<{ slug: string 
     ? routeParams.slug.join("/")
     : routeParams.slug || "";
 
-  let post = getPosts(["src", "app", "blog", "posts"]).find((post) => post.slug === slugPath);
+  const post = await getBlogPostBySlug(slugPath);
 
   if (!post) {
     notFound();
   }
-
-  const avatars =
-    post.metadata.team?.map((person) => ({
-      src: person.avatar,
-    })) || [];
 
   return (
     <Row fillWidth>

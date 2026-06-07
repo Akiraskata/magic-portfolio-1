@@ -43,7 +43,7 @@ function readMDXFile(filePath: string) {
     title: data.title || "",
     subtitle: data.subtitle || "",
     publishedAt: data.publishedAt,
-    summary: data.summary || "",
+    summary: data.summary || data.description || "",
     image: data.image || "",
     images: data.images || [],
     tag: data.tag || [],
