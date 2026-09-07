@@ -23,12 +23,12 @@ const social: Social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
   // Set essentials: true for links you want to show on the about page
-  // {
-  //   name: "GitHub",
-  //   icon: "github",
-  //   link: "https://github.com/once-ui-system",
-  //   essential: true,
-  // },
+  {
+    name: "IROVA Studio",
+    icon: "github",
+    link: "irovastudio.com",
+    essential: true,
+  },
   {
     name: "LinkedIn",
     icon: "linkedin",
@@ -47,6 +47,7 @@ const social: Social = [
     link: "https://www.threads.com/@akiraskata",
     essential: true,
   },
+  
   {
     name: "Email",
     icon: "email",
